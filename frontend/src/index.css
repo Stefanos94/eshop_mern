@@ -40,8 +40,16 @@ main {
   padding: 1rem;
 }
 
+.nav-bar {
+  display: inline;
+}
 .nav-bar li {
   display: inline;
   color: white;
   padding: 1rem;
+}
+
+#header-search {
+  display: inline;
+  text-align: right;
 }

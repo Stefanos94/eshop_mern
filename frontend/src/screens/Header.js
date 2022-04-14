@@ -9,6 +9,14 @@ function Header() {
         <li>Shop</li>
         <li>Profile</li>
       </ul>
+
+      <input
+        type="text"
+        id="header-search"
+        placeholder="Search product"
+        name="s"
+      />
+      <button type="submit">Search</button>
     </header>
   );
 }
