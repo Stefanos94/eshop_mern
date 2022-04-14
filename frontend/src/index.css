@@ -53,3 +53,9 @@ main {
   display: inline;
   text-align: right;
 }
+
+footer {
+  background: #404040;
+  color: #a18b28;
+  padding: 1rem;
+}
