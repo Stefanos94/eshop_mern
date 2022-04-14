@@ -1,22 +1,20 @@
 import { Link } from "react-router-dom";
+import Navbar from "react-bootstrap/Navbar";
+import Container from "react-bootstrap/Container";
+import { LinkContainer } from "react-router-bootstrap";
 
 function Header() {
   return (
     <header>
-      <Link to="/">Mern</Link>
-      <ul className="nav-bar">
-        <li>Items</li>
-        <li>Shop</li>
-        <li>Profile</li>
-      </ul>
-
-      <input
-        type="text"
-        id="header-search"
-        placeholder="Search product"
-        name="s"
-      />
-      <button type="submit">Search</button>
+      <Navbar bg="dark" variant="dark">
+        <Container>
+          <Navbar.Brand>
+            <LinkContainer to="/">
+              <Navbar.Brand>Eshop</Navbar.Brand>
+            </LinkContainer>
+          </Navbar.Brand>
+        </Container>
+      </Navbar>
     </header>
   );
 }

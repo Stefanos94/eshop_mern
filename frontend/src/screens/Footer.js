@@ -1,5 +1,9 @@
 function Footer() {
-  return <footer>This is the footer!</footer>;
+  return (
+    <div className="text-center">
+      <footer>All rights reserved</footer>
+    </div>
+  );
 }
 
 export default Footer;

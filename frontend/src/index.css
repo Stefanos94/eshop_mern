@@ -7,19 +7,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-header {
-  background-color: #404040;
-  padding: 1rem;
-}
-
-header a {
-  color: #ffffff;
-  font-weight: bold;
-  text-decoration: none;
+.site-container {
+  min-height: 100vh;
 }
 
 main {
-  padding: 1rem;
+  flex: 1;
 }
 
 .products {
@@ -37,25 +30,5 @@ main {
   max-width: 400px;
 }
 .product-info {
-  padding: 1rem;
-}
-
-.nav-bar {
-  display: inline;
-}
-.nav-bar li {
-  display: inline;
-  color: white;
-  padding: 1rem;
-}
-
-#header-search {
-  display: inline;
-  text-align: right;
-}
-
-footer {
-  background: #404040;
-  color: #a18b28;
   padding: 1rem;
 }
