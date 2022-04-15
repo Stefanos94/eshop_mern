@@ -1,28 +1,26 @@
 import { Link } from "react-router-dom";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
 
 function Product(props) {
   const { product } = props;
   return (
-    <div className="product" key={product.slug}>
+    <Card key={product.slug}>
       <Link to={`/product/${product.slug}`}>
-        <img src={product.image} alt={product.name} />
+        <img src={product.image} className="card-img-top" alt={product.name} />
       </Link>
       <div className="product-info">
-        <Link to={`/product/${product.slug}`}>
-          <p>{product.name}</p>
-        </Link>
-        <p>
-          <strong>${product.price}</strong>
-        </p>
-        <button type="button" className="btn btn-default btn-sm">
-          <span
-            className="glyphicon 
-            glyphicon-shopping-cart"
-          ></span>
+        <Card.Body>
+          <Link to={`/product/${product.slug}`}>
+            <Card.Title>{product.name}</Card.Title>
+          </Link>
+        </Card.Body>
+        <Card.Text>${product.price}</Card.Text>
+        <Button>
           <b> Add to Cart </b>
-        </button>
+        </Button>
       </div>
-    </div>
+    </Card>
   );
 }
 
