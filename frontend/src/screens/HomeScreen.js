@@ -1,4 +1,4 @@
-import { useEffect, useState, useReducer, setProducts, result } from "react";
+import { useEffect, useReducer } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import Main from "./Main.js";
@@ -16,6 +16,7 @@ const reducer = (state, action) => {
       return state;
   }
 };
+
 function HomeScreen() {
   const [{ loading, error, products }, dispatch] = useReducer(reducer, {
     products: [],
@@ -35,7 +36,7 @@ function HomeScreen() {
         dispatch({ type: "FETCH_FAIL", payload: error.message });
       }
 
-      setProducts(result.data);
+      //setProducts(result.data);
     };
     fetchData();
   }, []);

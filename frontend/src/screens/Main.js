@@ -1,6 +1,5 @@
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function Main(products) {
   return (
@@ -19,7 +18,13 @@ function Main(products) {
               <p>
                 <strong>${product.price}</strong>
               </p>
-              <button>Add to cart</button>
+              <button type="button" className="btn btn-default btn-sm">
+                <span
+                  className="glyphicon 
+                    glyphicon-shopping-cart"
+                ></span>
+                <b> Add to Cart </b>
+              </button>
             </div>
           </div>
         ))}
